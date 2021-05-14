@@ -15,7 +15,5 @@ print("Presentar todos los países que tengan en su cadena de nombre de país 'u
 for i in paises:
     print("%s" % (i))
 
-
-
 pais_terminacion = session.query(Pais).filter(or_(Pais.nombre_pais.like("%uador%"), Pais.capital.like("%ito%"))).all()
 print(pais_terminacion)

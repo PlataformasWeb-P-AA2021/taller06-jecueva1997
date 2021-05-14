@@ -23,9 +23,9 @@ class Pais(Base):
     dial = Column(String)
     geoname_id = Column(String)
     itu = Column(String)
-    languajes = Column(String)
+    languajes = Column(String) 
     independiente = Column(String)
-
+ 
     def __repr__(self):
         return "Pais: nombre_pais: %s capital: %s continente: %s dial: %s geoname_id: %s itu: %s languajes: %s independiente: %s" % (
                          self.nombre_pais,

@@ -8,7 +8,7 @@ engine = create_engine('sqlite:///datapersonas.db')
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
+ 
 paises = session.query(Pais).all() 
 
 print("Presentar los lenguajes de cada país")

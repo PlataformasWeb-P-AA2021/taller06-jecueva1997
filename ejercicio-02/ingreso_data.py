@@ -21,7 +21,7 @@ for i in json_data:
             dial=i["Dial"], geoname_id=i['Geoname ID'], itu=i["ITU"], languajes=i["Languages"], \
                 independiente=i["is_independent"])
     session.add(p)
-
+ 
     #print(i["CLDR display name"])
     #print(i["Capital"])
     #print(i["Continent"])

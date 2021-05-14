@@ -10,7 +10,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 paises = session.query(Pais).all() 
-
+ 
 print("Presentar todos los países del continente americano")
 for i in paises:
     print("%s" % (i))
